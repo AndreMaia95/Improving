@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://kit.fontawesome.com/83e3d20250.js" crossorigin="anonymous"></script>
+    </head>
+        <title>Menu</title>
+    </head>
+    <body>
+        <header>
+            <div class="inner-width">
+                <h1>André_Dev</h1>
+                <div class="menu-icon">
+                    <i class="fa-solid fa-list"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="navigation-menu">
+            <nav>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Works</a></li>
+                <li><a href="#">Contact</a></li>
+            </nav>
+        </div>
+
+        <script>
+            $(".menu-icon").click(function(){
+                $(this).toggleClass("active");
+                $(".navigation-menu").toggleClass("active");
+                $(".menu-icon i").toggleClass("fa-regular fa-xmark");
+            });
+        </script>
+
+    </body>
+</html>
